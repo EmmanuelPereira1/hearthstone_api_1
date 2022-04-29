@@ -1,5 +1,8 @@
 import 'package:api_snowman/pages/cardsinformation.dart';
 import 'package:api_snowman/request/cards_repository.dart';
+import 'package:api_snowman/widgets/background.dart';
+import 'package:api_snowman/widgets/textstyle.dart';
+import 'package:bordered_text/bordered_text.dart';
 import 'package:flutter/material.dart';
 
 class CardsList extends StatefulWidget {
@@ -49,7 +52,7 @@ class _CardsListState extends State<CardsList> {
         animation: cardsRepo,
         builder: (context, snapshot) {
           return Container(
-            color:Colors.transparent,
+            decoration: BackgroundApp.boxDecoration,
             alignment: Alignment.center,
             child: Stack(
               children: [
@@ -62,7 +65,7 @@ class _CardsListState extends State<CardsList> {
               decoration: BoxDecoration(
                 image: DecorationImage(image: NetworkImage(card.cropImage),
                 fit: BoxFit.cover,
-                opacity: 0.5),
+                opacity: 1),
                 borderRadius: const BorderRadius.all(
                   Radius.circular(40)
                 )
@@ -71,8 +74,15 @@ class _CardsListState extends State<CardsList> {
                 onTap: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => CardsInformation(name: card.name, image: card.image, flavorText: card.flavorText,))),
-                title: Text(card.name,
-                textAlign: TextAlign.center,),
+                title: BorderedText(
+                  strokeWidth: 4,
+                  strokeColor: Colors.black,
+                  child: Text(card.name,
+                  style: const TextStyle(
+                    color: Colors.white
+                  ),
+                  textAlign: TextAlign.center,),
+                ),
               ),
             ),
           );

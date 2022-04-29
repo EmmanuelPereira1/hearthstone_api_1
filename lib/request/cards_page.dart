@@ -6,10 +6,8 @@ class CardsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("HEARTHSTONE CARDS")),
-      body: const CardsList(),
-    );
+    return const Scaffold(
+        body: CardsList(),
+      );
   }
 }

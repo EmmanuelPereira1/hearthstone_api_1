@@ -5,10 +5,7 @@ class TextStyleCards {
 
 static TextStyle textStyle =
 GoogleFonts.medievalSharp(
-  color: Colors.black,
+  color: Colors.white,
   fontSize: 40
 );
-
-
-
 }
