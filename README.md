@@ -6,12 +6,12 @@ A project that demonstrates the cards of the Hearthstone
 
 This project is a starting point for a Flutter application.
 
-Using an [api](https://develop.battle.net/documentation/hearthstone) for the letters, images and phrases.
+Using an [API hearthstone](https://develop.battle.net/documentation/hearthstone) for the letters, images and phrases.
 
 ## Images
 
-<img src="/Users/snowmanlabs/Downloads/project_hearthstone_api/hearthstone_api_1/imagesreadme/Captura de Tela 2022-04-29 às 14.22.05.png">
-<imag src="/Users/snowmanlabs/Downloads/project_hearthstone_api/hearthstone_api_1/imagesreadme/Captura de Tela 2022-04-29 às 14.22.38.png">
+![image1!](imagesreadme/Captura%20de%20Tela%202022-04-29%20%C3%A0s%2014.23.09.png)
+![images2!](imagesreadme/Captura%20de%20Tela%202022-04-29%20%C3%A0s%2014.22.38.png)
 
 
 For help getting started with Flutter, view our
