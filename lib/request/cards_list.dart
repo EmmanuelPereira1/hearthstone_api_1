@@ -63,6 +63,8 @@ class _CardsListState extends State<CardsList> {
                       return Card(
             child: Container(
               decoration: BoxDecoration(
+                border: Border.all(color: Colors.black,
+                width: 1.5),
                 image: DecorationImage(image: NetworkImage(card.cropImage),
                 fit: BoxFit.cover,
                 opacity: 1),

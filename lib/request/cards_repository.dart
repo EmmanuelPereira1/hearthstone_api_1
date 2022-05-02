@@ -12,7 +12,7 @@ class CardsRepository with ChangeNotifier {
 
   getCards() async {
     final url = Uri.parse(
-        'https://us.api.blizzard.com/hearthstone/cards?locale=pt_BR&page=$_page&access_token=USD0l4E62MPwuOA8SbMDF3j2Uv9UQEE1jI');
+        'https://us.api.blizzard.com/hearthstone/cards?locale=pt_BR&page=$_page&access_token=US4mxAE5qOKFfro7UrRTRv2vZ7NiKxnagN');
     final response = await http.get(url);
     final List<dynamic> results = jsonDecode(response.body)['cards'];
     for (var i = 0; i < results.length; i++) {
